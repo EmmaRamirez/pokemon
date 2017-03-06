@@ -1,52 +1,43 @@
-extern crate rustc_serialize;
-
-use rustc_serialize::json::Json;
-use std::fs::File;
-use std::io::Read;
-use std::io::copy;
-use std::io::stdout;
-
 // #![deny(missing_docs,
 //         missing_debug_implementations, missing_copy_implementations,
 //         trivial_casts, trivial_numeric_casts,
 //         unsafe_code,
 //         unstable_features,
 //         unused_import_braces, unused_qualifications)]
-#[cfg(test)]
+extern crate rustc_serialize;
+
 mod pokemon {
+
+
 
     #[derive(RustcDecodable, RustcEncodable)]
     pub struct Pokemon (Vec<String>);
-    const LANGUAGES:[&'static str] = &["de", "en", "fr", "ja", "ko", "ru"];
 
+    #[allow(dead_code, unused_variables)]
+    pub fn get_pokemon() -> Pokemon {
+        use std::fs::File;
+        use rustc_serialize::json::decode;
 
-    pub fn get_pokemon() {
         let mut file = File::open("data/en.json").unwrap();
         let mut data = String::new();
-        file.read_to_string(&mut data).unwrap();
 
-        let json: Pokemon = json::decode(&data).unwrap();
+        let json: Pokemon = decode(&data).unwrap();
 
+        json
     }
 
-
-    #[test]
+    #[allow(dead_code)]
     fn get_all() {
 
     }
 
-    #[test]
+    #[allow(dead_code)]
     fn get_random() {
 
     }
 
-    #[test]
-    fn get_name(id: i32, lang: LANGUAGES) {
-
-    }
-
-    #[test]
-    fn get_id(name: str, lang: LANGUAGES) {
+    #[allow(dead_code, unused_variables)]
+    fn get_name(id: i32) {
 
     }
 }
