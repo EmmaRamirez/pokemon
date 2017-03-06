@@ -2,5 +2,12 @@
 name = "pokemon"
 version = "0.1.0"
 authors = ["Emma Ramirez <ramirez.emma.g@gmail.com>"]
+# respository = "https://github.com/EmmaRamirez/pokemon.git"
+homepage = "https://github.com/EmmaRamirez/pokemon.git"
+license = "MIT"
+readme = "README.md"
+documentation = ""
+description = "Get Pokémon names"
 
 [dependencies]
+rustc-serialize = "*"

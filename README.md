@@ -1,2 +1,3 @@
-# pokemon
-Get pokemon names.
+# Pokémon ![premierball](media/premier.png)
+
+A tiny Rust library inspired by [Pokémon](https://github.com/sindresorhus/pokemon), that lets you get Pokémon names.
