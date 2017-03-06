@@ -6,8 +6,8 @@ authors = ["Emma Ramirez <ramirez.emma.g@gmail.com>"]
 homepage = "https://github.com/EmmaRamirez/pokemon.git"
 license = "MIT"
 readme = "README.md"
-documentation = ""
+documentation = "https://github.com/EmmaRamirez/pokemon"
 description = "Get Pokémon names"
 
 [dependencies]
-rustc-serialize = "*"
+rustc-serialize = "0.3.22"
