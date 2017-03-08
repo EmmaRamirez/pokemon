@@ -13,7 +13,7 @@ mod pokemon {
     #[derive(RustcDecodable, RustcEncodable)]
     pub struct Pokemon (Vec<String>);
 
-    #[allow(dead_code, unused_variables)]
+    #[allow(dead_code, unused_mut, unused_variables)]
     pub fn get_pokemon() -> Pokemon {
         use std::fs::File;
         use rustc_serialize::json::decode;
