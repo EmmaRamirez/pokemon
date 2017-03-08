@@ -16,16 +16,12 @@ pub mod pokemon {
 
     pub struct Row { }
 
-    #[derive(RustcDecodable, RustcEncodable, Debug)]
+    #[derive(RustcDecodable, RustcEncodable, Clone, Debug)]
     pub struct Pokemon {
         species: i32,
         language: i32,
         name: String,
         genus: Option<String>,
-    }
-
-    impl Clone for Pokemon {
-        fn clone(&self) -> Pokemon { *self }
     }
 
     #[allow(dead_code, unused_variables, unused_mut)]
@@ -57,7 +53,7 @@ pub mod pokemon {
 
     #[allow(dead_code, unused_variables)]
     pub fn get_name(id: i32) -> Pokemon {
-        let mut poke = &get_pokemon().clone();
+        let mut poke = &mut *get_pokemon().clone();
         poke[0]
     }
 
