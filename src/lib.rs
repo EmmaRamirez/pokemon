@@ -39,7 +39,6 @@ pub mod pokemon {
     fn search_one<P: AsRef<Path>>(file_path: P, index: usize, lang_id: i32) -> Pokemon {
         let file = File::open(file_path).unwrap();
         let mut rdr = csv::Reader::from_reader(file).has_headers(true);
-
         let rows:Vec<Pokemon> = rdr.decode().collect::<csv::Result<Vec<Pokemon>>>().unwrap();
 
         let mut pokey:Pokemon = Pokemon {
