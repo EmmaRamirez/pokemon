@@ -19,15 +19,6 @@ pub mod pokemon {
     use csv;
 
     /// The struct for `Pokemon`
-    ///
-    /// # Example
-    /// ```
-    /// Pokemon {
-    ///    species: 1,
-    ///    language: 3,
-    ///    name: "Bulbasaur".to_string(),
-    ///    genus: Some("seed".to_string())
-    /// ```
     #[derive(RustcDecodable, RustcEncodable, Clone, Debug)]
     pub struct Pokemon {
         species: i32,
@@ -97,11 +88,7 @@ pub mod pokemon {
     }
 
     /// Returns the name of the specified id
-    /// # Example
-    /// ```
-    /// get_name(9)
-    /// ```
-    /// The above would return "Blastoise"
+    /// Using 9 for example, would return "Blastoise"
     #[allow(dead_code, unused_variables)]
     pub fn get_name(id: usize) -> String {
         search_one("data/pokemon.csv", id, 9).name
