@@ -1,7 +1,7 @@
 # Pokémon ![premierball](media/premier.png)
 
-[![Travis](https://img.shields.io/travis/EmmaRamirez/pokemon.svg?style=flat-square)]()
-[![Crates.io](https://img.shields.io/crates/v/pokemon.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/travis/EmmaRamirez/pokemon.svg?style=flat-square)](https://travis-ci.org/EmmaRamirez/pokemon)
+[![Crates.io](https://img.shields.io/crates/v/pokemon.svg?style=flat-square)](https://crates.io/crates/pokemon)
 ![contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
 
 ### [Master](https://github.com/EmmaRamirez/pokemon/tree/master) | [Stable](https://github.com/EmmaRamirez/pokemon/tree/stable) | [Dev](https://github.com/EmmaRamirez/pokemon/tree/master)
