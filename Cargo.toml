@@ -11,3 +11,5 @@ description = "Get Pokémon names"
 
 [dependencies]
 rustc-serialize = "0.3.22"
+csv = "0.14"
+rand = "0.3"
